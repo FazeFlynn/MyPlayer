@@ -1,0 +1,662 @@
+
+
+:root {
+    --primary-color: #0f0f0f;
+    --secondary-color: #212121;
+    --hover-color: #3d3d3d;
+    --main-text-color: #ffffff;
+    --main-padding: 20px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+p {
+    color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+
+    /* font-optical-sizing:inherit; */
+    /* font-weight:600; */
+    /* font-style:normal; */
+
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+body { 
+    font-family: Roboto, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--main-text-color);
+}
+
+#top-strip {
+    background-color: var(--primary-color);
+    /* background-color: red; */
+
+    position: fixed;
+    top: 0%;
+
+    width: 100%;
+    min-height: 40px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: left; */
+
+}
+
+
+
+.left-div {
+    /* background-color: rgb(112, 127, 42); */
+
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+}
+
+.icon-span {
+    /* background-color: grey; */
+
+    /* display: inline; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    /* padding-right: 10px; */
+}
+
+.top-icons {
+    /* background-color: coral; */
+
+    width: 25px;
+    height: 25px;
+    /* background-color: red; */
+    /* padding-left: 10px;   */
+
+}
+
+.strips {
+    /* background-color: blueviolet; */
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    height: 25px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0px 10px 0px 10px;
+
+    font-family: "Oswald", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    
+    
+    
+}
+
+/* video - 1320 by 740: */
+
+#main-container {
+    /* background-color: red; */
+    /* padding-top: 10px; */
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* overflow-x: hidden; */
+    /* column-gap: 5px; */
+
+    margin-top: 30px;
+
+}
+
+#left-panel {
+    /* background-color: rgb(42, 16, 67); */
+    /* position: absolute; */
+    width: 70%;
+    height: auto;
+    margin: 20px 0px 0px 20px;
+
+    /* display: flex; */
+    
+}
+
+#player {
+
+    
+
+
+    width: 100%;
+
+
+    /* height: calc((width*9))/16px; */
+    /* padding-top: 56.25%; */
+
+    /* margin-bottom: 5px; */
+    /* border: 1px solid white; */
+
+
+    position: relative;
+
+    background-color: black;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+}
+
+video {
+    /* width: inherit; */
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    /* position: absolute; */
+    /* top: 0%; */
+
+    /* position: relative; */
+
+    background-color: black;
+
+
+    z-index: 1;
+
+}
+
+#overlay{
+    background-color: transparent;
+    /* opacity: 100%; */
+
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+
+    /* object-fit: contain; */
+}
+
+#title-span {
+    /* background-color: blue; */
+
+    background: linear-gradient(to bottom, black, transparent);
+    padding: 15px 0px 20px 0px;
+
+    opacity: 0%;
+
+    /* border-radius: 10px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    display: none;
+
+    height: 40px;
+    width: 100%;
+
+    transition: opacity .5s ease;
+}
+
+#title-p {
+    /* background-color: gold; */
+
+    font-size: 20px;
+    padding: 1px 20px 0px 20px;
+    
+}
+
+#ind {
+    /* background-color: red; */
+    /* position: absolute; */
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 20px;
+
+    /* margin-top: 20px; */
+
+    top: 5%;
+    left: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* top: 20%; */
+}
+
+#ind-p {
+    background-color: var(--primary-color);
+    /* background-color: green; */
+    opacity: 0%;
+
+    width: auto;
+    height: 20px;
+    padding: 15px 15px 15px 15px;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity .2s ease;
+}
+
+#controls-box {
+    
+    /* background-color: red; */
+
+    background: linear-gradient(to bottom, transparent,black);
+    opacity: 0%;
+
+    /* border-radius: 10px; */
+
+    
+
+
+    position: absolute;
+    bottom: 0%;
+
+    height: 50px;
+    width: 100%;
+
+    padding-top: 10px;
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity .5s ease;
+}
+
+.controls{
+    /* background-color: blue; */
+
+
+    position: absolute;
+    width: 98%;
+    height: 40px;
+}
+
+#seek-bar{
+    display: none;
+}
+
+#volume-bar{
+    display: none;
+}
+
+#seek-outer {
+    background-color: #ffffff8d;
+
+    z-index: 5;
+
+    /* position: relative; */
+
+    display: block;
+    width: 100%;
+    min-height: 3.5px;
+
+    cursor: pointer;
+
+    /* padding-top: 5px; */
+    /* transition: min-height 1s ease; */
+    transition: all .5s ease;
+}
+
+#seek-outer:hover {
+    min-height: 5px;
+    /* padding-top: 5px; */
+}
+
+#seek-outer:hover #seek-inner {
+    min-height: 5px;
+    /* padding-top: 5px; */
+
+}
+
+
+#seek-inner {
+    background-color: red;
+
+    /* position: absolute;
+    top: 0%;
+    left: 0%; */
+
+    width: 0%;
+    min-height: 3.5px;
+
+    transition: height 1s ease;
+}
+
+/* #seek-inner:hover {
+    min-height: 5px;
+} */
+
+#control-panels {
+    
+
+    width: 100%;
+
+    position: absolute;
+    bottom: 0%;
+
+    padding: 5px 5px 5px 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+
+}
+
+#left-control-panel {
+
+    /* background-color: rosybrown; */
+
+    width: auto;
+    height: auto;
+
+    /* position: absolute;
+    bottom: 0%; */
+
+    /* align-items: baseline; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    column-gap: 15px;
+    cursor: pointer;
+
+}
+
+#play-pause, #play-pause-img, #play-next, #play-next-img, #mute-unmute, #mute-unmute-img {
+    width: 25px;
+    height: 25px;
+}
+
+#right-control-panel {
+
+    /* background-color: brown; */
+
+    width: auto;
+    height: auto;
+
+    /* position: absolute;
+    bottom: 0%; */
+
+    /* align-items: baseline; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    column-gap: 20px;
+
+    cursor: pointer;
+
+
+}
+
+#settings, #settings-img, #full-screen, #full-screen-img {
+    width: 25px;
+    height: 25px;
+
+}
+
+#caption, #caption-img {
+    width: 27px;
+    height: 24px;
+}
+
+
+
+#fullscreen {
+    display: none;
+}
+
+
+
+
+/* Hide default controls */
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-moz-media-controls {
+    display: none !important;
+}
+video::-ms-media-controls {
+    display: none !important;
+}
+video::-o-media-controls {
+    display: none !important;
+}
+
+#below {
+    /* background-color: violet; */
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+
+    /* position: absolute; */
+}
+
+.title {
+    /* background-color: aqua; */
+    height: 20px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 2px; 
+    
+    margin-top: 10px;
+}
+
+.title p {
+    font-weight: 600;
+}
+
+.channel-container {
+    /* background-color:crimson; */
+
+    height: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2px;
+    min-height: 50px;
+}
+
+.channel-container p {
+    font-weight: 500;
+}
+
+.c-button-span {
+    /* background-color: chartreuse; */
+    width: auto;
+    height: 100%;
+    /* width: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#c-buttons{
+    height: 30px;
+
+
+}
+
+.channel-details {
+    /* background-color: red; */
+
+    height: 100%;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ch-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#sub-icon {
+    height: 30px;
+    width: 80px;
+    padding-left: 15px;
+}
+
+
+
+.description {
+    background-color: var(--secondary-color);
+
+    /* border-top: 1px solid rgb(70, 70, 70); */
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    border-radius: 7px;
+}
+
+.description p {
+    padding-left: 5px;
+}
+
+.p-normal {
+    font-weight: normal;
+}
+
+
+
+#right-panel {
+    /* background-color: blue; */
+
+    /* position: absolute; */
+    width: 25%;
+    min-width: 370px;
+
+    height: auto;
+    min-height: 500px;
+    margin: 20px;
+}
+
+.cards {
+    /* background-color: aqua; */
+
+    /* position: absolute; */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 6px 0px;
+}
+
+.thumb{
+    /* background-color: grey;   */
+
+    /* position: absolute; */
+    /* width: 50%; */
+    /* height: 100%; */
+    width: 160px;
+    overflow: hidden;
+
+    /* height: 90px; */
+    /* border: 2px solid burlywood; */
+    aspect-ratio: 16/9;  
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+img {
+    /* position: absolute; */
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.vid-info {
+    /* background-color: brown; */
+
+    /* position: absolute; */
+    width: 55%;
+    height: 90px;
+}
+
+.vid-info p {
+    font: 15px;
+    font-weight: normal;
+}
+
+#ch-card {
+    /* background-color: red; */
+
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    margin-top: 20px;
+}
+
+#ch-ci{
+
+    height: 15px;
+    width: 15px;
+
+}
+
+#c-name {
+    padding-left: 5px;
+    font-size: 13px;
+    color: #a9a9a9;
+    font-weight: normal;
+}

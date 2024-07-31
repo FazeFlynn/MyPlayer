@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>My Player App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="top-strip">
+        <div class="left-div">
+            <span class="icon-span"><img class="top-icons" src="images/menu-icon.png" alt=""></span>
+            <p class="strips">YouTube Player</p>
+
+        </div>
+
+    </div>
+
+    <div id="main-container">
+        <div id="left-panel">
+            <div id="player">
+                
+                <video id="video-player" autoplay></video>
+
+                <div id="overlay">
+                    <span id="title-span">
+                        <p id="title-p">This is the title of the video</p>
+                    </span>
+
+
+                    <span id="ind">
+                        <p id="ind-p"></p>
+                    </span>
+
+                    <div id="controls-box">
+
+                        <div class="controls">
+
+                            <div id="seek-outer">
+                                <div id="seek-inner"></div>
+                            </div>
+
+                            <div id="control-panels">
+                                <div id="left-control-panel">
+                                    <span id="play-pause"><img id="play-pause-img" src="images/pause.png" alt=""></span>
+                                    <span id="play-next"><img id="play-next-img" src="images/next.png" alt=""></span>
+                                    <span id="mute-unmute"><img id="mute-unmute-img" src="images/volumeOn.png" alt=""></span>
+
+
+                                    <div id="time">
+                                        <span id="current-time">0:00</span>/<span id="duration">0:00</span>
+                                    </div>
+
+                                </div>
+
+                                <div id="right-control-panel">
+                                    <span id="caption"><img id="caption-img" src="images/captions.png" alt=""></span>
+                                    <span id="settings"><img id="settings-img" src="images/settings.png" alt=""></span>
+                                    <span id="full-screen"><img id="full-screen-img" src="images/fullscreenEnter.png" alt=""></span>
+                                    
+                                </div>
+                            </div>                           
+
+                        </div>
+
+                    </div>
+
+                   
+                </div>                              
+
+            </div>
+
+            <div id="below" class="">
+                <div class="title" class="">
+                    <p id="video-title">This is the Title of the video</p>
+                </div>
+                <div class="channel-container" class="">
+                    <div class="channel-details">
+                        <img id="ch-icon" src="images/ch-icon.jpg" alt="">
+                        <p id="folder-name">Folder Name</p>
+                        <img id="sub-icon" src="images/sub.png" alt="">
+
+
+                    </div>
+
+                    <span class="c-button-span" >
+                        <img id="c-buttons" src="images/cpanelbuttons.png" alt="">
+
+                    </span>
+                </div>
+
+                <div class="description" class="">
+                    <p>This is the description or the notes section of the video</p>
+                    <p class="p-normal">This Section can be used to make notes</p>
+                    <p class="p-normal">Helpfull when you are watching educational videos</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="right-panel">
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <div class="thumb">
+                    <img src="videos/img1.png" alt="Thumb">
+                </div>
+                <div class="vid-info">
+                    <p>Lauterbreunn of the Videos Will be Displyed Here</p>
+                    <div id="ch-card">
+                        <img id="ch-ci" src="images/ch-icon.jpg" alt="">
+                        <p id="c-name">folder name</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "myplayer",
+  "version": "1.0.0",
+  "description": "this is my player",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
